@@ -27,7 +27,7 @@ Notebook dalam repository ini mencakup implementasi dari konsep-konsep berikut:
     * Implementasi struktur data yang lebih efisien untuk memetakan kata ke ID dokumen.
     * Menghitung frekuensi kata (*Term Frequency*) dan membuat *Posting List*.
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 * **Python 3**
 * **Pandas** (Untuk manipulasi data tabel)
