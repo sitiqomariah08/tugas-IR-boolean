@@ -1,10 +1,13 @@
 # Implementasi Basic Information Retrieval (Boolean Model)
 
-Repository ini berisi tugas praktikum mata kuliah **Sistem Temu Kembali Informasi (Information Retrieval)**. Proyek ini mendemonstrasikan cara kerja dasar mesin pencari menggunakan algoritma **Boolean Retrieval Model**.
+Repository ini berisi tugas praktikum mata kuliah **Sistem Temu Kembali Informasi (Information Retrieval)**. Proyek ini mendemonstrasikan cara kerja dasar mesin pencari menggunakan algoritma **Boolean Retrieval Model** dan **Inverted Index**.
+
+Selain mengikuti panduan tutorial standar, repository ini juga menyertakan eksperimen mandiri menggunakan dataset kustom (kalimat Bahasa Indonesia) untuk menguji fleksibilitas algoritma.
 
 ## Struktur Repository
 
-* **`basic_IR_booleanModel.ipynb`**: Notebook utama yang berisi kode program Python untuk simulasi sistem temu kembali informasi.
+* **`basic_IR_booleanModel.ipynb`**: Notebook utama yang berisi implementasi sesuai dengan panduan tutorial (studi kasus kalimat Bahasa Inggris: "Cow/Tuesday").
+* **`custom_boolean_model.ipynb`**: Notebook tambahan berisi eksperimen mandiri. Pada file ini, logika algoritma yang sama diterapkan pada dataset kalimat Bahasa Indonesia untuk membuktikan pemahaman konsep.
 * **`.gitignore`**: Konfigurasi agar file sampah (seperti folder virtual environment) tidak ikut ter-upload.
 
 ## Konsep yang Dipelajari
@@ -21,11 +24,19 @@ Notebook dalam repository ini mencakup implementasi dari konsep-konsep berikut:
 
 3.  **Boolean Retrieval Model**:
     * Melakukan query pencarian sederhana menggunakan logika Boolean (`AND`, `OR`, `NOT`).
-    * Contoh kasus: Mencari dokumen yang mengandung kata "cow" **TAPI TIDAK** mengandung kata "tuesday".
 
 4.  **Inverted Index (Indeks Terbalik)**:
     * Implementasi struktur data yang lebih efisien untuk memetakan kata ke ID dokumen.
     * Menghitung frekuensi kata (*Term Frequency*) dan membuat *Posting List*.
+
+## Eksperimen & Pengembangan Mandiri
+
+Pada file **`custom_boolean_model.ipynb`**, dilakukan uji coba algoritma menggunakan kalimat:
+1.  *"Saya suka belajar pemrograman Python"*
+2.  *"Python adalah bahasa pemrograman yang populer"*
+3.  *"Saya belajar Python di VSCode menggunakan WSL"*
+
+Hasil eksperimen menunjukkan bahwa sistem berhasil melakukan tokenisasi dan pencarian (query) dengan akurat pada input bahasa yang berbeda, membuktikan bahwa logika Boolean Retrieval bersifat universal terhadap karakter teks.
 
 ## Teknologi yang Digunakan
 
@@ -42,4 +53,4 @@ Proyek ini dikerjakan dengan mengikuti panduan dan referensi kode dari:
 * **Repository Asli**: [DataScienceProjects](https://github.com/HimanshuBajpai869/DataScienceProjects) oleh Himanshu Bajpai.
 
 ---
-*Dibuat untuk memenuhi tugas Information Retrieval.*
+*Dibuat untuk memenuhi tugas Sistem Temu Kembali Informasi.*
